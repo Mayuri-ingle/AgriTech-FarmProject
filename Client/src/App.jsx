@@ -2,13 +2,13 @@ import { useState } from "react";
 import "./App.css";
 import Auth from "./Auth";
 
-const API = "http://localhost:5000";
-const [weatherCity, setWeatherCity] = useState("Indore");
-const [weather, setWeather] = useState(null);
-const [weatherLoading, setWeatherLoading] = useState(false);
-const [weatherError, setWeatherError] = useState("");
 
 function App() {
+  const API = "http://localhost:5000";
+  const [weatherCity, setWeatherCity] = useState("Indore");
+  const [weather, setWeather] = useState(null);
+  const [weatherLoading, setWeatherLoading] = useState(false);
+  const [weatherError, setWeatherError] = useState("");
   const [showAuth, setShowAuth] = useState(false);
   const [loggedInUser, setLoggedInUser] = useState(() => {
     try {
